@@ -3,13 +3,13 @@ import { useState } from "react";
 export default function App() {
   const [level, setLevel] = useState(10);
   const [imageSize, setImageSize] = useState(200); 
-  const [imageSrc, setImageSrc] = useState("img/moodeng.jpg"); 
+  const [imageSrc, setImageSrc] = useState("https://i.ibb.co/gFYxVpv/moodeng.jpg"); 
 
   const increaseLevel = (amount) => {
     setLevel((prevLevel) => {
       const newLevel = prevLevel + amount;
       if (newLevel > 100) {
-        setImageSrc("img/onon.jpg"); 
+        setImageSrc("https://i.ibb.co/c8NH0zX/onon.jpg"); 
       }
       return newLevel;
     });
@@ -46,7 +46,7 @@ export default function App() {
       <div style={{ marginTop: "20px" }}>
         <button onClick={() => increaseLevel(5)} style={buttonStyle}>
           <img 
-            src="img/watermelonn.png" 
+            src="https://i.ibb.co/my0tMQL/watermelonn.png" 
             alt="แตงโม" 
             style={{ width: '50px', height: '50px' }} 
           />
@@ -55,7 +55,7 @@ export default function App() {
 
         <button onClick={() => increaseLevel(10)} style={buttonStyle}>
           <img 
-            src="img/pumpkinn.png" 
+            src="https://i.ibb.co/vdmkJrC/pumpkinn.png" 
             alt="ฟักทอง" 
             style={{ width: '50px', height: '50px' }} 
           />
@@ -64,7 +64,7 @@ export default function App() {
 
         <button onClick={() => increaseLevel(20)} style={buttonStyle}>
           <img 
-            src="img/mukata.png" 
+            src="https://i.ibb.co/nL2bqn8/mukata.png" 
             alt="หมูกระทะ" 
             style={{ width: '50px', height: '50px' }} 
           />
