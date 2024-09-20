@@ -21,7 +21,7 @@ export default function App() {
       <h1 style={{ color: "#78A3D4", fontSize: "48px", textShadow: "2px 2px 5px rgba(0, 0, 0, 0.3)" }}>เกมเลี้ยงหมูเด้ง</h1> {/* หัวข้ออยู่ตรงกลาง */}
       <h2 style={{ fontSize: "32px", color: "#2f4f4f" }}>Level {level}</h2>
 
-      {/* แถบ Level */}
+      {/* แถบ Level */} 
       <div style={{ width: "300px", height: "20px", backgroundColor: "#ccc", margin: "20px auto", borderRadius: "10px" }}>
         <div style={{
           width: `${level > 100 ? 100 : level}%`,
